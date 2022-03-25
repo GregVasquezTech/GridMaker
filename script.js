@@ -13,11 +13,11 @@ function addR() {
 
 // Add a column
 function addC() {
-    grid = document.getElementById("grid");
-    for(var i = 0, row; row = grid.rows[i]; i++){
-       column = row.insertCell(-1)
+    grid = document.getElementById("grid"); // Opens the table with id = "grid"
+    for(var i = 0, row; row = grid.rows[i]; i++){ // loops through all row in the table.
+       column = row.insertCell(-1) // Creates a new cell in each row.
     }
-    numCols +=1;
+    numCols +=1; // Updates the number of columns.
 
 }
 
@@ -29,8 +29,8 @@ function removeR() {
 
 // Remove a column
 function removeC() {
-    grid = document.getElementById("grid").deleteCell(numCols -1 ); // Opens the table and starts deleting colums starting from the right.
-    numCols = numCols - 1; // Updates the number of columns.
+    grid = document.getElementById("grid") // Opens the table and starts deleting colums starting from the right.
+     // Updates the number of columns.
 }
 
 // Set global variable for selected color
