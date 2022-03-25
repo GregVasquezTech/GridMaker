@@ -1,2 +1,3 @@
-# grid-maker-starter-code
-Starter code for Assignment 3 - Grid Maker.
+# Assignment 3 - Grid Maker.
+
+Created by: Gregory Vasquez
