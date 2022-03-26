@@ -30,7 +30,10 @@ function removeR() {
 // Remove a column
 function removeC() {
     grid = document.getElementById("grid") // Opens the table and starts deleting colums starting from the right.
-     // Updates the number of columns.
+    for (var i = 0, row; row = grid.rows[i]; i++){ // Loops through each row.
+       row.deleteCell(0); // deleting each cell in a single column.
+    }
+    numCols -= 1; // Updates the number of columns.
 }
 
 // Set global variable for selected color
